@@ -1,0 +1,66 @@
+version: '3'
+
+services:
+  adminer:
+    image: adminer
+    labels:
+      traefik.frontend.rule: "Host:adminer.spielzeugmuzak.localhost"
+      traefik.port: "8080"
+    restart: always
+
+  db:
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: spielzeugmuzak
+      MYSQL_USER: spielzeugmuzak
+      MYSQL_PASSWORD: spielzeugmuzak
+    image: mysql:5.5.60
+    volumes:
+      - ./etc/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+
+  spielzeugmuzak:
+    build: .
+    labels:
+      traefik.frontend.rule: "Host:spielzeugmuzak.localhost"
+      traefik.port: "80"
+    volumes:
+      - ./LABEL:/var/www/html
+      - ./etc/php.ini:/usr/local/etc/php/conf.d/php.ini
+
+  dolina:
+    build: .
+    labels:
+      traefik.frontend.rule: "Host:dolina.spielzeugmuzak.localhost"
+      traefik.port: "80"
+    volumes:
+      - ./LABEL/dolina:/var/www/html
+      - ./etc/php.ini:/usr/local/etc/php/conf.d/php.ini
+
+  jeunesse-fantome:
+    build: .
+    labels:
+      traefik.frontend.rule: "Host:jeunesse-fantome.spielzeugmuzak.localhost"
+      traefik.port: "80"
+    volumes:
+      - ./LABEL/jeunesse-fantome:/var/www/html
+      - ./etc/php.ini:/usr/local/etc/php/conf.d/php.ini
+
+  villapiegee:
+    build: .
+    labels:
+      traefik.frontend.rule: "Host:villapiegee.spielzeugmuzak.localhost"
+      traefik.port: "80"
+    volumes:
+      - ./LABEL/villapiegee:/var/www/html
+      - ./etc/php.ini:/usr/local/etc/php/conf.d/php.ini
+
+  traefik:
+    command: --api --docker
+    image: traefik:1.7-alpine
+    labels:
+      traefik.frontend.rule: "Host:traefik.spielzeugmuzak.localhost"
+      traefik.port: "80"
+    ports:
+      - 80:80
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
