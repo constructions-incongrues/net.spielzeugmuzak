@@ -1,0 +1,35 @@
+# Translation of Boutique in French (France)
+# This file is distributed under the same license as the Boutique package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-13 13:29:03+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Boutique\n"
+
+#. Theme Name of the plugin/theme
+msgid "Boutique"
+msgstr "Boutique"
+
+#. Description of the plugin/theme
+msgid "A Storefront child theme designed for small WooCommerce stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Boutique!"
+msgstr "Un thème enfant de Storefront destiné aux petites boutiques WooCommerce. Les fonctionnalités de Boutique sont simples, avec un design traditionnel que vous pouvez personnaliser avec l’outil de personnalisation de WordPress. Vous cherchez un thème pour votre nouvelle boutique WooCommerce ? Ne cherchez pas plus loin que Storefront et Boutique !"
+
+#. Template Name of the plugin/theme
+msgid "Homepage"
+msgstr "Page d’accueil"
+
+#. Author URI of the plugin/theme
+msgid "http://woocommerce.com"
+msgstr "http://woocommerce.com"
+
+#. Theme URI of the plugin/theme
+msgid "https://woocommerce.com/products/boutique/"
+msgstr "https://woocommerce.com/products/boutique/"
+
+#. Author of the plugin/theme
+msgid "WooThemes"
+msgstr "WooThemes"

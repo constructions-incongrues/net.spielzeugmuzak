@@ -1,0 +1,9 @@
+<?php  if (!defined('SITE')) exit('No direct script access allowed');
+
+$indx['db'] 		= 'db334782078';
+$indx['user'] 		= 'dbo334782078';
+$indx['pass'] 		= 'vatefaireenculer';
+$indx['host'] 		= 'db2583.1and1.fr';
+$indx['sql']		= 'mysql';
+
+?>
