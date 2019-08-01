@@ -14,9 +14,6 @@
  * @package WordPress
  */
 
-define( 'WP_HOME', 'http://spielzeugmuzak.localhost' );
-define( 'WP_SITEURL', 'http://spielzeugmuzak.localhost' );
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'spielzeugmuzak');
@@ -25,10 +22,10 @@ define('DB_NAME', 'spielzeugmuzak');
 define('DB_USER', 'spielzeugmuzak');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'spielzeugmuzak');
+define('DB_PASSWORD', '*lV6b8f8');
 
 /** MySQL hostname */
-define('DB_HOST', 'db');
+define('DB_HOST', '127.0.0.1');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

@@ -2,8 +2,8 @@
 
 $indx['db'] 		= 'spielzeugmuzak';
 $indx['user'] 		= 'spielzeugmuzak';
-$indx['pass'] 		= 'spielzeugmuzak';
-$indx['host'] 		= 'db';
+$indx['pass'] 		= '*lV6b8f8';
+$indx['host'] 		= '127.0.0.1';
 $indx['sql']		= 'mysql';
 
 ?>
